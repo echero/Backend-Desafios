@@ -10,17 +10,17 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-
-async function ver() {
-
-    //DEVUELVE UN OBJETO POR ID o NULL 
-    // const busquedaPorId = await archivo.getById(1)
-    // console.log(busquedaPorId)
-
-    //DEVUELVE UN ARRAY CON LOS OBJETOS OBJETOS
-    // console.log(await archivo.getAll());
-
-}
+app.get("/", (req, res) => { 
+    res.send(
+        `<div>
+            <h2 style="text-align:center;font-family:Arial;font-weight:bold;margin-top:3%;">Servidor con Express</h2>
+            <h3 style="text-align:center;font-family:Arial;font-weight:bold;margin-top:3%;">Repositorio GitHub</h3>
+            <h4 style="text-align:center;font-family:Arial;font-weight:bold;">https://github.com/echero/Backend-Desafios/tree/main/3-Servidor%20con%20Express</h4>
+            <h3 style="text-align:center;font-family:Arial;font-weight:bold;margin-top:3%;">Repositorio Glitch</h3>
+            <h4 style="text-align:center;font-family:Arial;font-weight:bold;">https://api-prodcutos-03.glitch.me </h4>
+            <h4 style="text-align:center;font-family:Arial;font-weight:bold;">https://glitch.com/edit/#!/api-prodcutos-03</h4>
+        </div>`)
+})
 
 app.get("/productos", async (req, res) => {
     
