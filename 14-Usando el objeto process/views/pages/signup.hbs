@@ -1,0 +1,28 @@
+    <div class="p-2 bg-light rounded">
+        <h1 class="mt-3 text-center">MONGO ATLAS</h1>
+        <p class="display-6 text-primary">Crear Usuario</p>
+        <p>
+            <form autocomplete="off" id="signupForm" method="POST">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Ingrese su nombre:</label>
+                    <input class="form-control" type="text" id="name" name="name"/>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Ingrese su email:</label>
+                    <input class="form-control" type="text" id="username" name="username"/>
+                </div>
+                <div class="mb-3">
+                    <label for="passwd" class="form-label">Ingrese su contraseña:</label>
+                    <input class="form-control" type="password" id="passwd"name="passwd" />
+                </div>
+                <button type="submit" class="btn btn-danger">Guardar</button>
+                <hr>
+                <div class="form-group mt-3">
+                    <a class="btn btn-primary" href="/login"/>Login</a>
+                </div>
+            </form>
+        </p>
+    </div>
+
+
+<script type="module" src="register.js"></script>
