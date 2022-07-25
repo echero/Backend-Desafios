@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="alert alert-success">
+        <div class="card-body d-flex justify-content-between">
+        <h3 style="color: black;">Bienvenido {{userName}} ({{userEmail}})</h3><a class="btn btn-primary" href="/logout">Salir</a>
+        </div>
+    </div>
+</div>
+<div class="container bg-light">
+
+    <div class="row d-flex justify-content-center">
+      <h2 class="text-center mt-3">Ingrese Producto</h2>
+
+      <form class="w-50 mt-3" id="agregarProducto">
+
+        <div class="mb-3">
+          <label for="Titulo" class="form-label">Titulo</label>
+          <input type="text" class="form-control" id="title" required>
+        </div>
+        <div class="mb-3">
+          <label for="Precio" class="form-label">Precio</label>
+          <input type="number" step="any" class="form-control" id="price" required>
+        </div>
+        <div class="mb-3">
+          <label for="Url" class="form-label">Url Imagen</label>
+          <input type="text" class="form-control" id="thumbnail" required>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Enviar">
+
+      </form>
+
+    </div>
+
+    <div id="productos"></div>
+
+    <div>
+
+      <h2 class="mt-3">Centro de Mesajes</h2>
+      <h5>Compresión: <span id="porcentaje"></span>%</h5>
+      <div class="container-sm mt-4">
+
+        <form id="agregarMensaje">
+          <div class="mb-3">
+            <input type="email" class="form-control w-50" id="email" placeholder="ingresar tu email" required>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <input type="text" class="form-control w-50" id="nombre" placeholder="ingresar tu nombre" required>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <input type="text" class="form-control w-50" id="apellido" placeholder="ingresar tu apellido" required>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <input type="number" class="form-control w-50" id="edad" placeholder="ingresar tu edad" required>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <input type="text" class="form-control w-50" id="alias" placeholder="ingresar tu alias" required>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <input type="text" class="form-control w-50" id="avatar" placeholder="ingresar tu avatar (Url Foto)" required>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <input type="text" class="form-control w-50" id="texto" placeholder="ingresar un mensaje" required>
+          </div>
+
+          <input type="submit" class="btn btn-primary mt-1" value="Enviar">
+        </form>
+        <div id="mensajes" style="margin-bottom: 2%; margin-top: 2%; background-color: rgb(124, 210, 184); width: 50%;"></div>
+      </div>
+
+    </div>
+    
+</div>
