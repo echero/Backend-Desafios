@@ -1,4 +1,4 @@
-# Servidor con balance de carga
+# Loggers, Gzip y Analisis de Performance
 
 1. Correr "npm i" (Instalacion de todos los paquetes del proyecto)
 
