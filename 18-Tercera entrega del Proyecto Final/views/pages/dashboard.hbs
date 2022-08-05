@@ -1,0 +1,81 @@
+<header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/dashboard" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <img src="https://www.kindpng.com/picc/m/424-4245845_no-tiene-artculos-en-su-carrito-de-compras.png" class="bi me-2" width="50" height="32">
+        </a>
+        
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/dashboard" class="nav-link px-2 link-dark">Inicio</a></li>
+        </ul>
+
+        <div class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+
+          <button type="button" class="btn btn-primary position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Carrito
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cantProduct">
+
+            </span>
+          </button>
+
+        </div>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/files/{{userImage}}" alt="mdo" width="50" height="50" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item text-center">{{userName}} </a></li>
+            <li><a class="dropdown-item">{{userEmail}}</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalProfile">Mis datos</button></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/logout">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</header>
+
+<div class="container bg-light">
+
+    <div id="productos"></div>
+
+    <div>
+    
+</div>
+
+<!-- Modal Carrito-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="terminarCompra">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Profile-->
+<div class="modal fade" id="exampleModalProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Perfil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="perfil">
+        
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+<div class="container mt-5">
+
+<article class="card-body mx-auto" style="max-width: 400px;">
+	<h4 class="card-title mt-3 mb-3 text-center">Create Account</h4>
+	<form autocomplete="off" id="signupForm" method="POST" enctype="multipart/form-data">
+	<div class="form-group input-group mb-2">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user p-1"></i> </span>
+		 </div>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Nombre" >
+    </div> <!-- form-group// -->
+    <div class="form-group input-group mb-2">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user p-1"></i> </span>
+		 </div>
+        <input type="number" name="edad" id="edad" class="form-control" placeholder="Edad">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group mb-2">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-building p-1"></i></span>
+		</div>
+		<input type="text" name="direccion" id="direccion" class="form-control" placeholder="Dirección">
+	</div> <!-- form-group end.// -->
+    <div class="form-group input-group mb-2">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-phone p-1"></i> </span>
+		</div>
+		<select class="custom-select" style="max-width: 120px;">
+		    <option value="+54">+54</option>
+		</select>
+    	<input type="text" name="telefono" id="telefono" class="form-control" placeholder="Numero de telefono">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group mb-2">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-image p-1"></i> </span>
+		 </div>
+        <input type="file" class="form-control" id="imagen" name="imagen">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group mb-2">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-envelope p-1"></i> </span>
+		 </div>
+        <input type="email" name="username" id="username" class="form-control" placeholder="Email">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock p-1"></i> </span>
+		</div>
+        <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Contraseña">
+    </div> <!-- form-group// -->                                    
+    <div class="form-group">
+        <button type="submit" class="w-100 btn btn-lg btn-primary mt-3">Crear cuenta!</button>
+    </div> <!-- form-group// -->      
+    <p class="text-center mt-4">Ya tienes cuenta creada?<a href="/login">Iniciar Sesión</a></p>                                                                 
+</form>
+</article>
+</div> <!-- card.// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {{!-- <div class="p-2 bg-light rounded">
+        <h1 class="mt-3 text-center">MONGO ATLAS</h1>
+        <p class="display-6 text-primary">Crear Usuario</p>
+        <p>
+            <form autocomplete="off" id="signupForm" method="POST">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Ingrese su nombre:</label>
+                    <input class="form-control" type="text" id="name" name="name"/>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Ingrese su email:</label>
+                    <input class="form-control" type="text" id="username" name="username"/>
+                </div>
+                <div class="mb-3">
+                    <label for="passwd" class="form-label">Ingrese su contraseña:</label>
+                    <input class="form-control" type="password" id="passwd"name="passwd" />
+                </div>
+                <button type="submit" class="btn btn-danger">Guardar</button>
+                <hr>
+                <div class="form-group mt-3">
+                    <a class="btn btn-primary" href="/login"/>Login</a>
+                </div>
+            </form>
+        </p>
+    </div> --}}
+
+
+<script type="module" src="register.js"></script>
