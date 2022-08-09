@@ -1,0 +1,18 @@
+[
+	{
+		"nombre": "Hojas",
+		"descripcion": "Hojas Rivadabia",
+		"codigo": "H001",
+		"precio": 100,
+		"stock": 200,
+		"id": 1
+	},
+	{
+		"nombre": "Marcadores",
+		"descripcion": "Marcadores Fabercastell",
+		"codigo": "M001",
+		"precio": 300,
+		"stock": 200,
+		"id": 2
+	}
+]
