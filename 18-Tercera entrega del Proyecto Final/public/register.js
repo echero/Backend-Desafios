@@ -22,7 +22,7 @@ signupForm.addEventListener('submit', function (e) {
         .then(response => response.json())
         .then(info => {
             if (info.registered === true){
-                sessionStorage.setItem('userInfo',{userId:info.userId});
+                sessionStorage.setItem('userId',info.userId);
                 let formData = new FormData();
                 const imagen = document.getElementById('imagen');
                 formData.append("imagen", imagen.files[0]);

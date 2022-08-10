@@ -15,7 +15,7 @@ module.exports = {
 
         } catch (error) {
             res.status(400)
-            res.json({result: `ERROR: El carrito ${idCarrito} no tiene productos cargados, o no existe ese carrito!`}).end()
+            res.json({result: `No se pudo encontrar el Usuario!`}).end()
         }
         
     },
