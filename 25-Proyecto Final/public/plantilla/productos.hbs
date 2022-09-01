@@ -1,0 +1,20 @@
+<div class="row mb-2">
+  {{#each productos}}
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Categoria: <a href="#" style="color: black;">{{categoria}}</a></strong>
+          <strong class="d-inline-block mb-2 text-primary">Codigo: {{code}}</strong>
+          <h3 class="mb-0">{{title}}</h3>
+          <div class="mb-1 text-muted">Stock: {{stock}}</div>
+          <p class="card-text mb-auto text-success fw-bold fs-3">Precio: ${{price}}</p>
+          <p class="card-text mb-auto">{{description}}</p>
+          <button class="btn btn-primary agregar" data-id="{{_id}}">Agregar al carrito</button>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img" src="{{thumbnail}}" width="200" height="250"></img>
+        </div>
+      </div>
+    </div>
+  {{/each}}   
+</div>

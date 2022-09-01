@@ -1,0 +1,9 @@
+{"level":"error","message":"Hubo un error al guardar el producto. ValidationError: idUser: Path `idUser` is required."}
+{"level":"error","message":"Hubo un error al guardar el producto. ValidationError: idUser: Path `idUser` is required."}
+{"level":"error","message":"Hubo un error al guardar el producto. ValidationError: idUser: Path `idUser` is required."}
+{"level":"error","message":"Hubo un error al guardar el producto. ValidationError: idUser: Path `idUser` is required."}
+{"level":"error","message":"Hubo un error al guardar el producto. ValidationError: idUser: Path `idUser` is required."}
+{"level":"error","message":"Hubo un error al guardar el producto. DocumentNotFoundError: No document found for query \"{ _id: new ObjectId(\"630fa6790476e397d34d53f0\") }\" on model \"pedidos\""}
+{"level":"error","message":"Hubo un error al guardar el producto. DocumentNotFoundError: No document found for query \"{ _id: new ObjectId(\"630fb749d4b31523595e415c\") }\" on model \"pedidos\""}
+{"level":"error","message":"Hubo un error al guardar el producto. DocumentNotFoundError: No document found for query \"{ _id: new ObjectId(\"630fb8424483f84d0629ccb7\") }\" on model \"pedidos\""}
+{"level":"error","message":"Hubo un error al guardar el producto. ValidationError: idCarrito: Path `idCarrito` is required."}

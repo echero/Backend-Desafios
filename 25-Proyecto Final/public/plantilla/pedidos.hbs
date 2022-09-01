@@ -1,0 +1,27 @@
+{{#if union.length}}
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Cant. Productos</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    {{#each union}}
+    <tr>
+      <th scope="row">{{_id}}</th>
+      <td>{{createdAt}}</td>
+      <td>{{productos.length}}</td>
+      <td>
+            ${{suma}}
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{else}}
+<p>No hay pedidos generados!</p>
+{{/if}}
