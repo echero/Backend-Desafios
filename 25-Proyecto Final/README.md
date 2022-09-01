@@ -1,4 +1,4 @@
-# 3 Entrega del Proyecto Final
+# Entrega del Proyecto Final
 
 1. Correr "npm i" (Instalacion de todos los paquetes del proyecto)
 
